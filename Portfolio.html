@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Portfolio</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("components/header.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="content">
+      <h1>Portfolio</h1>
+      <div class="portfolio_links">
+        <h2>
+          <a href="https://github.com/ShadowLancer42" target="_blank">GitHub</a>
+        </h2>
+        <h2>
+          <a href="https://shadowlancer42.itch.io/" target="_blank">Itch.io</a>
+        </h2>
+        <img
+          src="images/paint_graphic.png"
+          alt="An crappy cartoon image with a stick figure pictured as saying 'These colors are ugly, that's because I'm not a graphic designer. If you want me to make your website, you need to pick the color pallete, not me.'"
+        />
+      </div>
+    </div>
+  </body>
+</html>

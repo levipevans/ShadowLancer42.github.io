@@ -4,46 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="shortcut icon" type="image.png" href="images/favicon.png" />
-    <style>
-      /*background stuff*/
-      body {
-        background-color: wheat;
-      }
-      /*all text*/
-      * {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      /*all images are the same style*/
-      .basic-image {
-        width: 300px;
-        border-radius: 15px;
-      }
-      /*hide the fact that the 'header' is a link*/
-      .page-gottem {
-        color: black;
-        text-decoration: unset;
-        font-size: 50px;
-        font-weight: bold;
-      }
-    </style>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>ShadowLancer</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("components/header.html");
+      });
+    </script>
   </head>
   <body>
-    <a href="gottem.html" class="page-gottem">My Website</a>
-    <h2>What is this?</h2>
-    <p>This is my website, it literally says that right at the top smh.</p>
-    <h2>What is on here? Why is this a thing?</h2>
-    <p>
-      Good Question! I'm not really sure. It just exist yk? Here, take a photo
-      of a cat lmao
-    </p>
-    <img src="images/cat.jpg" alt="a cute little cat" class="basic-image" />
-    <h2>Is this the only page on here? Seriously?</h2>
-    <p>
-      Nope, there's another page! Click the main header at the top of this page
-      to get to it. (I made it look like normal text so you wouldn't notice
-      until now hehe)
-    </p>
+    <div id="header"></div>
+    <div class="content">
+      <h1>About Me</h1>
+      <p class="about_text">
+        I am a 17 year old (soon to be) freelance programmer. I have been coding
+        since 2nd or 3rd grade, although I didn't start doing anything serious
+        until around early 2020. I currently have a general knowledge of Python,
+        a basic knowledge of The Unity Engine (using C#), and am currently
+        learning Web Development (and hey look, I put this website together on
+        my own!)
+      </p>
+      <h2>
+        If you would like to check out some of my stuff, feel free to check my
+        <a href="Portfolio.html">Portfolio</a>
+      </h2>
+    </div>
   </body>
 </html>
